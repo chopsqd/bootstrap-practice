@@ -1,0 +1,22 @@
+@import 'fonts.css';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu-bar {
+    padding: 20px 0;
+    background: #fff;
+}
+
+.menu__item {
+    font-family: 'Open Sans Semibold';
+    font-size: 20px;
+    margin-left: 35px;
+}
+
+.menu__item:hover {
+    text-shadow: 2px 2px 2px grey;
+}
