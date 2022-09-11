@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Open Sans Semibold";
+  font-family: "Open Sans";
 }
 
 /* HEADER */
@@ -15,10 +15,11 @@ body {
   background: #fff;
 }
 .menu__item {
+  font-family: "Open Sans Semibold";
   font-size: 20px;
   margin-left: 35px;
 }
-.menu:hover {
+.menu__item:hover {
   text-shadow: 2px 2px 2px grey;
 }
 
@@ -40,6 +41,7 @@ body {
   margin-bottom: 100px;
 }
 
+/* BUTTONS */
 .button {
   padding: 10px 25px;
   margin: 0 10px;
@@ -61,4 +63,23 @@ body {
 }
 .button--full:hover {
   border: 3px solid #fff;
+}
+
+/* SECTION */
+.section__title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.section__text {
+  font-size: 15px;
+  margin-bottom: 110px;
+}
+
+/* ABOUT */
+.about {
+  padding: 120px 0;
+}
+.about__title {
+  font-family: "Open Sans Semibold";
+  margin: 30px 0 20px;
 }/*# sourceMappingURL=style.css.map */
