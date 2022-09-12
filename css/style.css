@@ -1,4 +1,6 @@
 @import 'fonts.css';
+/* VARS */
+/* BASICS */
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +30,7 @@ body {
   padding: 180px 0;
   text-align: center;
   color: #fff;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/header/header.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -64,6 +66,9 @@ body {
 .button--full:hover {
   border: 3px solid #fff;
 }
+.button--black {
+  color: #000;
+}
 
 /* SECTION */
 .section__title {
@@ -82,4 +87,36 @@ body {
 .about__title {
   font-family: "Open Sans Semibold";
   margin: 30px 0 20px;
+}
+
+/* Services */
+.services {
+  padding: 165px 0 90px;
+  background: #e4fdf9;
+}
+.services__item {
+  padding: 50px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  transition: 0.5s ease;
+}
+.services__item:hover {
+  background-color: #00897b;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.services__item:hover .button--black {
+  color: #fff;
+  background: inherit;
+  border-color: #fff;
+}
+.services__icon {
+  font-size: 72px;
+}
+.services__title {
+  margin: 40px 0 25px;
+}
+.services__text {
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */
