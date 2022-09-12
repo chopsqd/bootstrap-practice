@@ -139,4 +139,45 @@ body {
 }
 .portfolio__text {
   display: none;
+}
+
+/* PRICE */
+.price {
+  padding: 120px 0;
+  background: #f0f1f1;
+}
+.price__card {
+  transition: 0.3s;
+}
+.price__card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.price__header {
+  padding: 40px 0;
+  background: #3949ab;
+}
+.price__title {
+  font-size: 25px;
+}
+.price__amount {
+  font-size: 50px;
+  letter-spacing: 5px;
+}
+.price__amount sup {
+  font-size: 25px;
+}
+.price__amount sub {
+  font-size: 17px;
+}
+.price__content {
+  font-size: 17px;
+  color: #212121;
+}
+.price__advantage {
+  border-bottom: 1px solid #bfbfbf;
+  padding: 25px 0 10px;
+  max-width: 175px;
+}
+.price__footer {
+  padding: 60px 0;
 }/*# sourceMappingURL=style.css.map */

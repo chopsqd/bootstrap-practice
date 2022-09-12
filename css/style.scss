@@ -174,3 +174,54 @@ body {
         display: none;
     }
 }
+
+/* PRICE */
+.price {
+    padding: 120px 0; 
+    background: #f0f1f1;
+
+    &__card {
+        transition: .3s;
+    }
+
+    &__card:hover {
+        box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3)
+    }
+
+    &__header {
+        padding: 40px 0;
+        background: #3949ab;
+    }
+
+    &__title {
+        font-size: 25px; 
+    }
+
+    &__amount {
+        font-size: 50px;
+        letter-spacing: 5px;
+
+        & sup {
+            font-size: 25px;
+        }
+
+        & sub {
+            font-size: 17px;
+        }
+    }
+
+    &__content {
+        font-size: 17px;
+        color: #212121;
+    }
+
+    &__advantage {
+        border-bottom: 1px solid #bfbfbf;
+        padding: 25px 0 10px;
+        max-width: 175px;
+    }
+
+    &__footer {
+        padding: 60px 0;
+    }
+}
