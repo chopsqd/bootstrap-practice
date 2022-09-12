@@ -57,17 +57,16 @@ body {
   border: 3px solid #fff;
 }
 .button--empty:hover {
-  border: 3px solid #00897b;
-}
-.button--full {
   background: #00897b;
   border: 3px solid #00897b;
 }
-.button--full:hover {
-  border: 3px solid #fff;
-}
 .button--black {
   color: #000;
+}
+.button--black:hover {
+  background: #00897b;
+  border: 3px solid #00897b;
+  color: #fff;
 }
 
 /* SECTION */
@@ -119,4 +118,15 @@ body {
 }
 .services__text {
   margin-bottom: 40px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+  padding: 120px 0;
+}
+.portfolio__img {
+  margin-bottom: 30px;
+}
+.portfolio__list {
+  padding: 110px 0;
 }/*# sourceMappingURL=style.css.map */

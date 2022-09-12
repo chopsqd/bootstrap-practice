@@ -71,20 +71,18 @@ body {
     }
 
     &--empty:hover {
-        border: 3px solid $base-color;
-    }
-
-    &--full {
         background: $base-color;
         border: 3px solid $base-color;
     }
 
-    &--full:hover {
-        border: 3px solid #fff;
-    }
-
     &--black {
         color: #000;
+    }
+
+    &--black:hover {
+        background: $base-color;
+        border: 3px solid $base-color;
+        color: #fff;
     }
 }
 
@@ -147,5 +145,18 @@ body {
 
     &__text {
         margin-bottom: 40px;
+    }
+}
+
+/* PORTFOLIO */
+.portfolio {
+    padding: 120px 0; 
+
+    &__img {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        padding: 110px 0;
     }
 }
