@@ -79,7 +79,8 @@ body {
         color: #000;
     }
 
-    &--black:hover {
+    &--black:hover,
+    &--focused {
         background: $base-color;
         border: 3px solid $base-color;
         color: #fff;
@@ -151,12 +152,25 @@ body {
 /* PORTFOLIO */
 .portfolio {
     padding: 120px 0; 
+    
+    &__list {
+        padding: 110px 0;
+    }
+
+    &__item:hover &__img{
+        filter: brightness(30%);
+        transition: .3s;
+    }
+
+    &__item:hover &__text {
+        display: block;
+    }
 
     &__img {
         margin-bottom: 30px;
     }
 
-    &__list {
-        padding: 110px 0;
+    &__text {
+        display: none;
     }
 }

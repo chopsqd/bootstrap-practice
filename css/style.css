@@ -63,7 +63,7 @@ body {
 .button--black {
   color: #000;
 }
-.button--black:hover {
+.button--black:hover, .button--focused {
   background: #00897b;
   border: 3px solid #00897b;
   color: #fff;
@@ -124,9 +124,19 @@ body {
 .portfolio {
   padding: 120px 0;
 }
+.portfolio__list {
+  padding: 110px 0;
+}
+.portfolio__item:hover .portfolio__img {
+  filter: brightness(30%);
+  transition: 0.3s;
+}
+.portfolio__item:hover .portfolio__text {
+  display: block;
+}
 .portfolio__img {
   margin-bottom: 30px;
 }
-.portfolio__list {
-  padding: 110px 0;
+.portfolio__text {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
