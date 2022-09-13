@@ -4,6 +4,7 @@
 $base-color: #00897b;
 $base-blue: #3949ab;
 $base-grey: #f0f1f1;
+$base-green: #e4fdf9;
 
 /* BASICS */
 * {
@@ -87,9 +88,17 @@ body {
         border: 3px solid $base-color;
         color: #fff;
     }
+
+    &--blog {
+        margin-top: 120px;
+    }
 }
 
 /* SECTION */
+section {
+    padding: 120px 0;
+}
+
 .section {
     &__title {
         font-size: 30px;
@@ -104,8 +113,6 @@ body {
 
 /* ABOUT */
 .about {
-    padding: 120px 0;
-
     &__title {
         font-family: 'Open Sans Semibold';
         margin: 30px 0 20px;
@@ -115,7 +122,7 @@ body {
 /* Services */
 .services {
     padding: 165px 0 90px;
-    background: #e4fdf9;
+    background: $base-green;
 
     &__item {
         padding: 50px;
@@ -152,9 +159,7 @@ body {
 }
 
 /* PORTFOLIO */
-.portfolio {
-    padding: 120px 0; 
-    
+.portfolio {    
     &__list {
         padding: 110px 0;
     }
@@ -179,7 +184,6 @@ body {
 
 /* PRICE */
 .price {
-    padding: 120px 0; 
     background: $base-grey;
 
     &__card {
@@ -230,8 +234,6 @@ body {
 
 /* TEAM */
 .team {
-    padding: 120px 0;
-
     &__name {
         font-family: 'Open Sans Semibold';
         font-size: 20px;
@@ -283,5 +285,32 @@ body {
 
     & li.slick-active button {
         background: $base-blue;
+    }
+}
+
+/* BLOG */
+.blog {
+    background: $base-green;
+
+    &__title {
+        font-family: 'Open Sans Semibold';
+        font-size: 25px; 
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 30px;
+        
+        &:hover {
+            color: $base-color;
+        }
+    }
+
+    &__info {
+        font-family: 'Open Sans Semibold';
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        font-size: 15px;
     }
 }

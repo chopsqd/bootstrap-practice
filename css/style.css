@@ -68,8 +68,15 @@ body {
   border: 3px solid #00897b;
   color: #fff;
 }
+.button--blog {
+  margin-top: 120px;
+}
 
 /* SECTION */
+section {
+  padding: 120px 0;
+}
+
 .section__title {
   font-size: 30px;
   margin-bottom: 30px;
@@ -80,9 +87,6 @@ body {
 }
 
 /* ABOUT */
-.about {
-  padding: 120px 0;
-}
 .about__title {
   font-family: "Open Sans Semibold";
   margin: 30px 0 20px;
@@ -121,9 +125,6 @@ body {
 }
 
 /* PORTFOLIO */
-.portfolio {
-  padding: 120px 0;
-}
 .portfolio__list {
   padding: 110px 0;
 }
@@ -143,7 +144,6 @@ body {
 
 /* PRICE */
 .price {
-  padding: 120px 0;
   background: #f0f1f1;
 }
 .price__card {
@@ -183,9 +183,6 @@ body {
 }
 
 /* TEAM */
-.team {
-  padding: 120px 0;
-}
 .team__name {
   font-family: "Open Sans Semibold";
   font-size: 20px;
@@ -232,4 +229,27 @@ body {
 }
 .slider-dots li.slick-active button {
   background: #3949ab;
+}
+
+/* BLOG */
+.blog {
+  background: #e4fdf9;
+}
+.blog__title {
+  font-family: "Open Sans Semibold";
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 30px;
+}
+.blog__title:hover {
+  color: #00897b;
+}
+.blog__info {
+  font-family: "Open Sans Semibold";
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.blog__text {
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
