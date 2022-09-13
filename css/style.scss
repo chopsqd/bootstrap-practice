@@ -2,6 +2,8 @@
 
 /* VARS */
 $base-color: #00897b;
+$base-blue: #3949ab;
+$base-grey: #f0f1f1;
 
 /* BASICS */
 * {
@@ -178,7 +180,7 @@ body {
 /* PRICE */
 .price {
     padding: 120px 0; 
-    background: #f0f1f1;
+    background: $base-grey;
 
     &__card {
         transition: .3s;
@@ -190,7 +192,7 @@ body {
 
     &__header {
         padding: 40px 0;
-        background: #3949ab;
+        background: $base-blue;
     }
 
     &__title {
@@ -223,5 +225,63 @@ body {
 
     &__footer {
         padding: 60px 0;
+    }
+}
+
+/* TEAM */
+.team {
+    padding: 120px 0;
+
+    &__name {
+        font-family: 'Open Sans Semibold';
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    &__prof {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+/* SOCIAL */
+.social__item {
+    font-size: 25px;
+    color: $base-color;
+    background: $base-grey;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    transition: .3s;
+
+    & i {
+        transform: translate3d(-50%, -50%, 0);
+    }
+
+    &:hover {
+        background: $base-blue;
+        color: #fff;
+    }
+}
+
+/* SLIDER */
+.slider-dots {
+    margin: 115px  0 0 !important;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+
+    & button {
+        background: $base-color;
+        border-radius: 50%;
+        border: none;
+        font-size: 0;
+        width: 15px;
+        height: 15px;
+        margin: 0 5px;
+    }
+
+    & li.slick-active button {
+        background: $base-blue;
     }
 }

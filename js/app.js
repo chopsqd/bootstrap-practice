@@ -12,5 +12,14 @@ $(document).ready(function() {
                     $('.portfolio__list > div').show(300);
                 }
         }
-     });
+    });
+
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        arrows: false,
+        dots: true,
+        dotsClass: 'slider-dots'
+      });
 })
