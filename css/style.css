@@ -70,6 +70,9 @@ body {
 .button--blog {
   margin-top: 120px;
 }
+.button--form {
+  padding: 20px 80px;
+}
 
 /* SECTION */
 section {
@@ -249,6 +252,41 @@ section {
   font-size: 17px;
   margin-bottom: 30px;
 }
-.blog__text {
-  font-size: 15px;
+
+/* FOOTER */
+.footer {
+  padding: 120px 0 110px;
+  color: #fff;
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.footer__icon {
+  font-size: 50px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #3949ab;
+}
+.footer__desc {
+  font-family: "Open Sans Semibold";
+  font-size: 20px;
+  margin: 30px 0 70px;
+}
+.footer__text {
+  font-size: 20px;
+  padding: 10px;
+}
+
+/* FORM */
+.form__name, .form__email, .form__msg {
+  padding: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.form__msg {
+  margin: 30px 0 40px;
+  resize: none;
 }/*# sourceMappingURL=style.css.map */

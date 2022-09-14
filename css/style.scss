@@ -93,6 +93,10 @@ body {
     &--blog {
         margin-top: 120px;
     }
+
+    &--form {
+        padding: 20px 80px;
+    }
 }
 
 /* SECTION */
@@ -309,8 +313,48 @@ section {
         font-size: 17px;
         margin-bottom: 30px;
     }
+}
+
+/* FOOTER */
+.footer {
+    padding: 120px 0 110px;
+    color: #fff;
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: center;
+
+    &__icon {
+        font-size: 50px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: $base-blue;
+    }
+
+    &__desc {
+        font-family: $semibold;
+        font-size: 20px;
+        margin: 30px 0 70px;
+    }
 
     &__text {
-        font-size: 15px;
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+
+/* FORM */
+.form {
+    &__name, &__email, &__msg {
+        padding: 30px;
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+    }
+
+    &__msg {
+        margin: 30px 0 40px;
+        resize: none;
     }
 }
