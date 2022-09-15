@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -14,20 +14,28 @@
 </head>
 
 <body>
+    <div id="toTop" class="text-center position-fixed">
+        <i class="fas fa-chevron-up"></i>
+    </div>
     <header class="menu-bar">
         <div class="container">
             <div class="row">
-                <div class="col-xl-2">
+                <div class="col-xl-2 d-flex justify-content-between align-items-center">
                     <img src="img/header/logo.png" alt="Logo" class="logo">
+                    <button class="menu__icon">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
                 <div class="col-xl-8 ms-auto align-self-center">
-                    <nav class="menu d-flex justify-content-end">
-                        <a href="#" class="menu__item text-decoration-none text-dark hover-shadow">Home</a>
-                        <a href="#" class="menu__item text-decoration-none text-dark">About</a>
-                        <a href="#" class="menu__item text-decoration-none text-dark">Servicing</a>
-                        <a href="#" class="menu__item text-decoration-none text-dark">Portfolio</a>
-                        <a href="#" class="menu__item text-decoration-none text-dark">Blog</a>
-                        <a href="#" class="menu__item text-decoration-none text-dark">Contact us</a>
+                    <nav class="menu justify-content-end">
+                        <a href="/" class="menu__item text-decoration-none text-dark">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <a href="#about" class="menu__item text-decoration-none text-dark">About</a>
+                        <a href="#servicing" class="menu__item text-decoration-none text-dark">Servicing</a>
+                        <a href="#portfolio" class="menu__item text-decoration-none text-dark">Portfolio</a>
+                        <a href="#blog" class="menu__item text-decoration-none text-dark">Blog</a>
+                        <a href="#contact" class="menu__item text-decoration-none text-dark">Contact us</a>
                         <a href="#" class="menu__item text-decoration-none text-dark">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </a>
@@ -51,7 +59,7 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="#about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center ">
@@ -62,21 +70,21 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 text-center col-md-6">
                     <img src="img/about/about-1.jpg" alt="" class="about__img d-block m-auto">
                     <h3 class="about__title">Awesome Icons</h3>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor</p>
                 </div>
 
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 text-center col-md-6">
                     <img src="img/about/about-2.jpg" alt="" class="about__img d-block m-auto">
                     <h3 class="about__title">One page</h3>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor</p>
                 </div>
 
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 text-center col-md-6">
                     <img src="img/about/about-3.jpg" alt="" class="about__img d-block m-auto">
                     <h3 class="about__title">Fully Responsive</h3>
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -86,7 +94,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="#servicing">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center ">
@@ -97,7 +105,7 @@
             </div>
 
             <div class="row">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-magnifying-glass services__icon"></i>
                         <h3 class="services__title">Research</h3>
@@ -107,7 +115,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-newspaper services__icon"></i>
                         <h3 class="services__title">Portfolio</h3>
@@ -117,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-headset services__icon"></i>
                         <h3 class="services__title">Support</h3>
@@ -127,7 +135,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-book services__icon"></i>
                         <h3 class="services__title">Documentation</h3>
@@ -137,7 +145,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-code services__icon"></i>
                         <h3 class="services__title">Development</h3>
@@ -147,7 +155,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="services__item text-center">
                         <i class="fa-solid fa-pen-nib services__icon"></i>
                         <h3 class="services__title">Design</h3>
@@ -160,7 +168,7 @@
         </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="#portfolio">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center ">
@@ -171,7 +179,7 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-xl-6">
+                <div class="col-xl-6 text-center">
                     <button isClicked="true" class="button button--black" filter="all">All</button>
                     <button isClicked="false" class="button button--black" filter="wd">Web design</button>
                     <button isClicked="false" class="button button--black" filter="ud">UI/UX design</button>
@@ -180,42 +188,42 @@
             </div>
 
             <div class="row portfolio__list">
-                <div filter="wd" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="wd" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-1.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Hand Watch</h3>
                         <p class="portfolio__description">Web Design</p>
                     </div>
                 </div>
-                <div filter="ud" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="ud" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-2.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Some text</h3>
                         <p class="portfolio__description">UI/UX design</p>
                     </div>
                 </div>
-                <div filter="wd" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="wd" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-3.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Cool bags</h3>
                         <p class="portfolio__description">Web Design</p>
                     </div>
                 </div>
-                <div filter="mu" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="mu" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-4.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Amazing style</h3>
                         <p class="portfolio__description">Mockup</p>
                     </div>
                 </div>
-                <div filter="ud" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="ud" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-5.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Bottle example</h3>
                         <p class="portfolio__description">UI/UX design</p>
                     </div>
                 </div>
-                <div filter="mu" class="col-xl-4 portfolio__item position-relative text-center">
+                <div filter="mu" class="col-xl-4 col-md-6 portfolio__item position-relative text-center">
                     <img src="img/work/work-6.jpg" alt="" class="portfolio__img">
                     <div class="portfolio__text w-100 text-white position-absolute top-50 start-50 translate-middle">
                         <h3 class="portfolio__title">Another bag</h3>
@@ -243,7 +251,7 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price__card text-center bg-white">
                         <div class="price__header text-white">
                             <h3 class="price__title">Free Trail</h3>
@@ -265,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price__card text-center bg-white">
                         <div class="price__header text-white">
                             <h3 class="price__title">Basic</h3>
@@ -287,7 +295,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-6">
                     <div class="price__card text-center bg-white">
                         <div class="price__header text-white">
                             <h3 class="price__title">Ultimates</h3>
@@ -324,7 +332,7 @@
 
             <div class="row slider">
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-1.jpg" alt="team">
+                    <img src="img/team/team-1.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__prof">General Manager</p>
 
@@ -345,7 +353,7 @@
                 </div>
 
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-2.jpg" alt="team">
+                    <img src="img/team/team-2.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">Alexa Biru</h3>
                     <p class="team__prof">Office Director</p>
 
@@ -366,7 +374,7 @@
                 </div>
 
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-3.jpg" alt="team">
+                    <img src="img/team/team-3.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">Ronobir Sing</h3>
                     <p class="team__prof">Admin</p>
 
@@ -387,7 +395,7 @@
                 </div>
 
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-1.jpg" alt="team">
+                    <img src="img/team/team-1.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">John Doe</h3>
                     <p class="team__prof">General Manager</p>
 
@@ -408,7 +416,7 @@
                 </div>
 
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-2.jpg" alt="team">
+                    <img src="img/team/team-2.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">Alexa Biru</h3>
                     <p class="team__prof">Office Director</p>
 
@@ -429,7 +437,7 @@
                 </div>
 
                 <div class="col-xl-4 text-center">
-                    <img src="img/team/team-3.jpg" alt="team">
+                    <img src="img/team/team-3.jpg" alt="team" class="m-auto">
                     <h3 class="team__name">Ronobir Sing</h3>
                     <p class="team__prof">Admin</p>
 
@@ -452,7 +460,7 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="#blog">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center ">
@@ -463,11 +471,11 @@
             </div>
 
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <img src="img/blog/blog-1.jpg" alt="" class="w-100">
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4">
                         <a href="#" class="blog__title d-block mt-5">SEO Quis Vestibulum</a>
                         <div class="blog__info d-flex me-5">
                             <div class="blog__date d-flex align-items-center me-4">
@@ -485,7 +493,7 @@
             </div>
 
             <div class="row justify-content-between">
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4">
                         <a href="#" class="blog__title d-block mt-5">SEO Quis Vestibulum</a>
                         <div class="blog__info d-flex me-5">
                             <div class="blog__date d-flex align-items-center me-4">
@@ -501,17 +509,17 @@
                             ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
                 </div>
 
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <img src="img/blog/blog-2.jpg" alt="" class="w-100">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 col-md-6">
                     <img src="img/blog/blog-3.jpg" alt="" class="w-100">
                 </div>
 
-                <div class="col-xl-4">
+                <div class="col-xl-4 col-md-4">
                         <a href="#" class="blog__title d-block mt-5">SEO Quis Vestibulum</a>
                         <div class="blog__info d-flex me-5">
                             <div class="blog__date d-flex align-items-center me-4">
@@ -536,7 +544,7 @@
         </div>
     </section>
 
-    <section class="footer">
+    <section class="footer text-white" id="#contact">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-5 text-center ">
@@ -547,7 +555,7 @@
             </div>
 
             <div class="row justify-content-around">
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 col-md-4 text-center">
                     <div class="footer__item">
                         <div class="footer__icon d-flex justify-content-center align-items-center m-auto">
                             <i class="fa-solid fa-location-dot"></i>
@@ -556,7 +564,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 col-md-4 text-center">
                     <div class="footer__item">
                         <div class="footer__icon d-flex justify-content-center align-items-center m-auto">
                             <i class="fa-solid fa-phone"></i>
@@ -566,7 +574,7 @@
                     </div>
                 </div>
 
-                <div class="col-xl-3 text-center">
+                <div class="col-xl-3 col-md-4 text-center">
                     <div class="footer__item">
                         <div class="footer__icon d-flex justify-content-center align-items-center m-auto">
                             <i class="fa-solid fa-envelope"></i>

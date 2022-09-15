@@ -19,6 +19,22 @@ body {
     font-family: $opensans;
 }
 
+/* TO TOP BUTTON */
+#toTop {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #000;
+    background: #00897b;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+}
+
 /* HEADER */
 .menu {
     &-bar {
@@ -26,8 +42,13 @@ body {
         background: #fff;
     }
 
+    &__icon {
+        display: none;
+    }
+
     &__item {
         font-family: $semibold;
+        cursor: pointer;
 
         font-size: 20px;
         margin-left: 35px;
@@ -178,6 +199,7 @@ section {
     }
 
     &__img {
+        max-width: 100%;
         margin-bottom: 30px;
     }
 
@@ -192,6 +214,7 @@ section {
 
     &__card {
         transition: .3s;
+        margin-bottom: 20px;
 
         &:hover {
             box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.3)
@@ -318,7 +341,6 @@ section {
 /* FOOTER */
 .footer {
     padding: 120px 0 110px;
-    color: #fff;
     background-image: url('../img/footer.jpg');
     background-size: cover;
     background-position: center;
@@ -356,5 +378,26 @@ section {
     &__msg {
         margin: 30px 0 40px;
         resize: none;
+    }
+}
+
+/* MEDIA */
+@media screen and (max-width: 1200px) {
+    .menu__icon {
+        display: block;
+        background: #00897b;
+        border: none;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .form input, .form textarea {
+        margin: 10px 0;
     }
 }
