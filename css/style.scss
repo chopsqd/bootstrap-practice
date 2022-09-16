@@ -401,3 +401,80 @@ section {
         margin: 10px 0;
     }
 }
+
+@media screen and (max-width: 480px) {
+    .intro {
+        padding: 20px 0;
+
+        &__title {
+            font-size: 45px;
+        }
+
+        &__text {
+            margin-bottom: 20px;
+        }
+    }
+
+    .button {
+        margin-bottom: 10px;
+
+        &--blog {
+            margin-top: 20px;
+        }
+    }
+
+    .about {
+        padding: 20px 0;
+    }
+
+    .section__text {
+        margin-bottom: 20px;
+    }
+
+    .services {
+        padding: 20px 0;
+    }
+
+    .portfolio {
+        padding: 20px 0;
+
+        &__list {
+            padding: 20px 0;
+        }
+    }
+
+    .price {
+        padding: 20px 0;
+    }
+
+    .team {
+        padding: 20px 0;
+
+        & img {
+            max-width: 320px;
+        }
+    }
+
+    .slider-dots {
+        margin: 20px 0 !important;
+    }
+
+    .blog {
+        padding: 20px 0;
+
+        &__item {
+            border: 2px solid $base-color;
+            border-radius: 10px;
+            padding: 10px 0 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer {
+        padding: 20px 0;
+
+        &__desc {
+            margin: 10px 0 20px;
+        }
+    }
+}
